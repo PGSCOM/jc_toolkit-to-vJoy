@@ -1,35 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <configuration>
- <RetailColors>
-    <RC key="retailpreset_01" rgb_color="828282" tooltip="Grey" />
-    <RC key="retailpreset_02" rgb_color="0AB9E6" tooltip="Neon Blue" />
-    <RC key="retailpreset_03" rgb_color="FF3C28" tooltip="Neon Red" />
-    <RC key="retailpreset_04" rgb_color="E6FF00" tooltip="Neon Yellow" />
-    <RC key="retailpreset_05" rgb_color="FF3278" tooltip="Neon Pink" />
-    <RC key="retailpreset_06" rgb_color="1EDC00" tooltip="Neon Green" />
-    <RC key="retailpreset_07" rgb_color="E10F00" tooltip="Red" />
-    <RC key="retailpreset_08" rgb_color="323232" tooltip="Pro Black" />
-    <RC key="retailpreset_09" rgb_color="FFAFAF" tooltip="Pastel Pink" />    <!-- new pastel colors -->
-    <RC key="retailpreset_10" rgb_color="F5FF82" tooltip="Pastel Yellow" />  <!-- replace slots 9-12 -->
-    <RC key="retailpreset_26" rgb_color="F0CBEB" tooltip="Pastel Purple" />  <!-- button colors are offset +4 -->
-    <RC key="retailpreset_12" rgb_color="BCFFC8" tooltip="Pastel Green" />
- </RetailColors>
- <RetailColorsButtons>
-    <RC key="retailpreset_13" rgb_color="0F0F0F" tooltip="Grey Buttons" />  
-    <RC key="retailpreset_14" rgb_color="001E1E" tooltip="Neon Blue Buttons" />
-    <RC key="retailpreset_15" rgb_color="1E0A0A" tooltip="Neon Red Buttons" />
-    <RC key="retailpreset_16" rgb_color="142800" tooltip="Neon Yellow Buttons" />
-    <RC key="retailpreset_17" rgb_color="28001E" tooltip="Neon Pink Buttons" />
-    <RC key="retailpreset_18" rgb_color="002800" tooltip="Neon Green Buttons" />
-    <RC key="retailpreset_19" rgb_color="280A0A" tooltip="Red Buttons" />
-    <RC key="retailpreset_20" rgb_color="FFFFFF" tooltip="Pro Black Buttons" />
-    <RC key="retailpreset_21" rgb_color="372D2D" tooltip="Pastel Pink Buttons" />    <!-- new pastel button colors -->
-    <RC key="retailpreset_22" rgb_color="32332D" tooltip="Pastel Yellow Buttons" />  <!-- new slots 17-20, 21-24 -->
-    <RC key="retailpreset_23" rgb_color="373037" tooltip="Pastel Purple Buttons" />  <!-- space for 4 more controllers -->
-    <RC key="retailpreset_24" rgb_color="2D322D" tooltip="Pastel Green Buttons" />
-  </RetailColorsButtons>
+	<RetailColors>
+		<RC key="retailpreset_01" rgb_color="828282" tooltip="Grey" />
+		<RC key="retailpreset_02" rgb_color="0AB9E6" tooltip="Neon Blue" />
+		<RC key="retailpreset_03" rgb_color="FF3C28" tooltip="Neon Red" />
+		<RC key="retailpreset_04" rgb_color="E6FF00" tooltip="Neon Yellow" />
+		<RC key="retailpreset_05" rgb_color="FF3278" tooltip="Neon Pink" />
+		<RC key="retailpreset_06" rgb_color="1EDC00" tooltip="Neon Green" />
+		<RC key="retailpreset_07" rgb_color="E10F00" tooltip="Red" />
+		<RC key="retailpreset_08" rgb_color="323232" tooltip="Pro Black" />
+	</RetailColors>
+	<RetailColorsButtons>
+		<RC key="retailpreset_09" rgb_color="0F0F0F" tooltip="Grey Buttons" />
+		<RC key="retailpreset_10" rgb_color="001E1E" tooltip="Neon Blue Buttons" />
+		<RC key="retailpreset_11" rgb_color="1E0A0A" tooltip="Neon Red Buttons" />
+		<RC key="retailpreset_12" rgb_color="142800" tooltip="Neon Yellow Buttons" />
+		<RC key="retailpreset_13" rgb_color="28001E" tooltip="Neon Pink Buttons" />
+		<RC key="retailpreset_14" rgb_color="002800" tooltip="Neon Green Buttons" />
+		<RC key="retailpreset_15" rgb_color="280A0A" tooltip="Red Buttons" />
+		<RC key="retailpreset_16" rgb_color="FFFFFF" tooltip="Pro Black Buttons" />
+	</RetailColorsButtons>
 </configuration>
-
-<!-- may need to change ordering of colors to fit the UI properly -->
-<!-- current design has 8 colors w 8 matching buttons right below -->
-<!-- want pastels to line up in the same way on third/fourth row  -->
