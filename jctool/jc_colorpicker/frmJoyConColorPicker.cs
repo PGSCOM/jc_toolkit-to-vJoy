@@ -19,6 +19,30 @@
 /*****                                                        *****/
 /******************************************************************/
 
+//***************************************************************************************/
+//MIT License
+
+//Copyright (c) 2017 CTCaer
+
+//Permission is hereby granted, free of charge, to any person obtaining a copy
+//of this software and associated documentation files (the "Software"), to deal
+//in the Software without restriction, including without limitation the rights
+//to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//copies of the Software, and to permit persons to whom the Software is
+//furnished to do so, subject to the following conditions:
+
+//The above copyright notice and this permission notice shall be included in all
+//copies or substantial portions of the Software.
+
+//THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+//SOFTWARE.
+//***************************************************************************************/
+
 using System;
 using System.Drawing;
 using System.ComponentModel;
@@ -1289,53 +1313,57 @@ namespace jcColor {
             // 
             // rbtn_RetailColors17
             // 
-            this.rbtn_RetailColors17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.rbtn_RetailColors17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.rbtn_RetailColors17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbtn_RetailColors17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            //this.rbtn_RetailColors17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.rbtn_RetailColors17.Location = new System.Drawing.Point(4, 7);
             this.rbtn_RetailColors17.Name = "rbtn_RetailColors17";
             this.rbtn_RetailColors17.Size = new System.Drawing.Size(32, 32);
             this.rbtn_RetailColors17.TabIndex = 16;
             this.rbtn_RetailColors17.Text = "roundButton16";
+            this.toolTip1.SetToolTip(this.rbtn_RetailColors17, "Pastel Pink");
             this.rbtn_RetailColors17.UseVisualStyleBackColor = false;
             this.rbtn_RetailColors17.Click += new System.EventHandler(this.m_lbl_Preset_Click);
             // 
             // rbtn_RetailColors18
             // 
-            this.rbtn_RetailColors18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.rbtn_RetailColors18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(255)))), ((int)(((byte)(130)))));
             this.rbtn_RetailColors18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbtn_RetailColors18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            //this.rbtn_RetailColors18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.rbtn_RetailColors18.Location = new System.Drawing.Point(42, 7);
             this.rbtn_RetailColors18.Name = "rbtn_RetailColors18";
             this.rbtn_RetailColors18.Size = new System.Drawing.Size(32, 32);
             this.rbtn_RetailColors18.TabIndex = 17;
             this.rbtn_RetailColors18.Text = "roundButton16";
+            this.toolTip1.SetToolTip(this.rbtn_RetailColors18, "Pastel Yellow");
             this.rbtn_RetailColors18.UseVisualStyleBackColor = false;
             this.rbtn_RetailColors18.Click += new System.EventHandler(this.m_lbl_Preset_Click);
             // 
             // rbtn_RetailColors19
             // 
-            this.rbtn_RetailColors19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.rbtn_RetailColors19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(203)))), ((int)(((byte)(235)))));
             this.rbtn_RetailColors19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbtn_RetailColors19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            //this.rbtn_RetailColors19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.rbtn_RetailColors19.Location = new System.Drawing.Point(80, 7);
             this.rbtn_RetailColors19.Name = "rbtn_RetailColors19";
             this.rbtn_RetailColors19.Size = new System.Drawing.Size(32, 32);
             this.rbtn_RetailColors19.TabIndex = 18;
             this.rbtn_RetailColors19.Text = "roundButton16";
+            this.toolTip1.SetToolTip(this.rbtn_RetailColors19, "Pastel Purple");
             this.rbtn_RetailColors19.UseVisualStyleBackColor = false;
             this.rbtn_RetailColors19.Click += new System.EventHandler(this.m_lbl_Preset_Click);
             // 
             // rbtn_RetailColors20
             // 
-            this.rbtn_RetailColors20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.rbtn_RetailColors20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(255)))), ((int)(((byte)(200)))));
             this.rbtn_RetailColors20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbtn_RetailColors20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            //this.rbtn_RetailColors20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.rbtn_RetailColors20.Location = new System.Drawing.Point(118, 7);
             this.rbtn_RetailColors20.Name = "rbtn_RetailColors20";
             this.rbtn_RetailColors20.Size = new System.Drawing.Size(32, 32);
             this.rbtn_RetailColors20.TabIndex = 19;
             this.rbtn_RetailColors20.Text = "roundButton16";
+            this.toolTip1.SetToolTip(this.rbtn_RetailColors20, "Pastel Green");
             this.rbtn_RetailColors20.UseVisualStyleBackColor = false;
             this.rbtn_RetailColors20.Click += new System.EventHandler(this.m_lbl_Preset_Click);
             // 
@@ -1393,49 +1421,53 @@ namespace jcColor {
             // 
             // rbtn_RetailColors25
             // 
-            this.rbtn_RetailColors25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.rbtn_RetailColors25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.rbtn_RetailColors25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbtn_RetailColors25.Location = new System.Drawing.Point(4, 43);
             this.rbtn_RetailColors25.Name = "rbtn_RetailColors25";
             this.rbtn_RetailColors25.Size = new System.Drawing.Size(32, 32);
             this.rbtn_RetailColors25.TabIndex = 24;
             this.rbtn_RetailColors25.Text = "roundButton16";
+            this.toolTip1.SetToolTip(this.rbtn_RetailColors25, "Pastel Pink");
             this.rbtn_RetailColors25.UseVisualStyleBackColor = false;
             this.rbtn_RetailColors25.Click += new System.EventHandler(this.m_lbl_Preset_Click);
             // 
             // rbtn_RetailColors26
             // 
-            this.rbtn_RetailColors26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.rbtn_RetailColors26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(45)))));
             this.rbtn_RetailColors26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbtn_RetailColors26.Location = new System.Drawing.Point(42, 43);
             this.rbtn_RetailColors26.Name = "rbtn_RetailColors26";
             this.rbtn_RetailColors26.Size = new System.Drawing.Size(32, 32);
             this.rbtn_RetailColors26.TabIndex = 25;
             this.rbtn_RetailColors26.Text = "roundButton16";
+            this.toolTip1.SetToolTip(this.rbtn_RetailColors26, "Pastel Yellow");
             this.rbtn_RetailColors26.UseVisualStyleBackColor = false;
             this.rbtn_RetailColors26.Click += new System.EventHandler(this.m_lbl_Preset_Click);
             // 
             // rbtn_RetailColors27
             // 
-            this.rbtn_RetailColors27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.rbtn_RetailColors27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(48)))), ((int)(((byte)(55)))));
             this.rbtn_RetailColors27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbtn_RetailColors27.Location = new System.Drawing.Point(80, 43);
             this.rbtn_RetailColors27.Name = "rbtn_RetailColors27";
             this.rbtn_RetailColors27.Size = new System.Drawing.Size(32, 32);
             this.rbtn_RetailColors27.TabIndex = 26;
             this.rbtn_RetailColors27.Text = "roundButton16";
+            this.toolTip1.SetToolTip(this.rbtn_RetailColors27, "Pastel Purple");
             this.rbtn_RetailColors27.UseVisualStyleBackColor = false;
             this.rbtn_RetailColors27.Click += new System.EventHandler(this.m_lbl_Preset_Click);
             // 
             // rbtn_RetailColors28
             // 
-            this.rbtn_RetailColors28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.rbtn_RetailColors28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(45)))));
             this.rbtn_RetailColors28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbtn_RetailColors28.Location = new System.Drawing.Point(118, 43);
             this.rbtn_RetailColors28.Name = "rbtn_RetailColors28";
             this.rbtn_RetailColors28.Size = new System.Drawing.Size(32, 32);
             this.rbtn_RetailColors28.TabIndex = 27;
             this.rbtn_RetailColors28.Text = "roundButton16";
+            this.toolTip1.SetToolTip(this.rbtn_RetailColors28, "Pastel Green");
             this.rbtn_RetailColors28.UseVisualStyleBackColor = false;
             this.rbtn_RetailColors28.Click += new System.EventHandler(this.m_lbl_Preset_Click);
             // 
