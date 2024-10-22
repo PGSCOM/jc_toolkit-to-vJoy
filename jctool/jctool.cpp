@@ -1503,15 +1503,11 @@ int get_raw_ir_image(u8 mode, u8 show_status) {
                 }
                 else if (mode == 0x04)
                 {
+                    // weird data arrangement!
                     memset(buf_image, 0, 320 * 240);
                     for (int i = 61; i + 16 <= 59+300; i += 16) {
-                        // skip unknown data of length 50 at 48, 146, 244
-                        if (i == 61 + 48)
-                            i += 50;
-                        else if (i == 61 + 146)
-                            i += 50;
-                        else if (i == 61 + 244)
-                            break;
+                        if (i == 61 + 48 || i == 61 + 97 || i == 61 + 146 || i == 61 + 195 || i == 61 + 244)
+                            i++;
                         if (buf_reply[i] != 0 || buf_reply[i + 1] != 0) {
                             drawCluster(buf_image, (u16*)(buf_reply + i));
                         }
