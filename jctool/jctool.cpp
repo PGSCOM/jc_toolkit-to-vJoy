@@ -1412,7 +1412,6 @@ void drawCluster(u8* buffer, u16* data) {
     u16 y1 = data[7];
     u16 cx = (data[2] + 32) / 64;
     u16 cy = (data[3] + 32) / 64;
-    printf("%d %d %d %d\n", x0, x1, y0, y1);
     if (x1 < x0 || y1 < y0 || x1 >= 320 || y1 >= 240 || cx < x0 || cx > x1 || cy < y0 || cy > y1) {
         printf("err: ");
         for (int i = 0; i < 16; i++)
@@ -1473,14 +1472,6 @@ int get_raw_ir_image(u8 mode, u8 show_status) {
         memset(buf_reply, 0, sizeof(buf_reply));
         hid_read_timeout(handle, buf_reply, sizeof(buf_reply), 200);
 
-        // at 51: mode?
-        // at 52: fragment number
-        // at 59: number of clusters?, data start?
-        // at 55: in dpd: FFFF if nothing?
-        //for (int i = 59; i < sizeof(buf_reply); i++)
-        //    printf("%02x", buf_reply[i]);
-        //printf("\n");
-
         //Check if new packet
         if (buf_reply[0] == 0x31 && buf_reply[49] == 0x03 && buf_reply[51] == mode) {
             got_frag_no = buf_reply[52];
@@ -1493,6 +1484,7 @@ int get_raw_ir_image(u8 mode, u8 show_status) {
                 buf[14] = previous_frag_no;
                 buf[47] = mcu_crc8_calc(buf + 11, 36);
                 hid_write(handle, buf, sizeof(buf));
+
                 if (mode == 0x06) {
                     memset(buf_image, 0, 320 * 240);
                     for (int i = 61; i + 16 <= 59+300; i += 16) {
