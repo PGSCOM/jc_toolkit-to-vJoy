@@ -6365,9 +6365,9 @@ public ref class FormJoy : public System::Windows::Forms::Form
         graphicsHandle->InterpolationMode = System::Drawing::Drawing2D::InterpolationMode::HighQualityBicubic;
         graphicsHandle->DrawImage(rotatedImage, 0, 0, 240, 320);
 
-        this->pictureBoxIR->ClientSize = System::Drawing::Size(240, 320);
+        this->pictureBoxIR->ClientSize = System::Drawing::Size(240*1.5, 320*1.5);
         this->pictureBoxIR->Image = resizedImage;
-        this->AutoScaleDimensions = System::Drawing::SizeF(96, 96);
+        //this->AutoScaleDimensions = System::Drawing::SizeF(96, 96);
     }
 
     private: System::Void btn_getImage_Click(System::Object^  sender, System::EventArgs^  e) {
