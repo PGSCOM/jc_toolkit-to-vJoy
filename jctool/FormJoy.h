@@ -2887,7 +2887,7 @@ public ref class FormJoy : public System::Windows::Forms::Form
                 static_cast<System::Byte>(161)));
             this->radioBtn_IRModeCapture->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(188)),
                 static_cast<System::Int32>(static_cast<System::Byte>(0)));
-            this->radioBtn_IRModeCapture->Location = System::Drawing::Point(10, 102);
+            this->radioBtn_IRModeCapture->Location = System::Drawing::Point(10, 21);
             this->radioBtn_IRModeCapture->Margin = System::Windows::Forms::Padding(0);
             this->radioBtn_IRModeCapture->Name = L"radioBtn_IRModeCapture";
             this->radioBtn_IRModeCapture->Size = System::Drawing::Size(68, 21);
