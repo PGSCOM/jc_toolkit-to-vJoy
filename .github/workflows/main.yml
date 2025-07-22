@@ -22,3 +22,11 @@ jobs:
       - name: Build Visual Studio solution
         run: |
           msbuild "jctool.vs2017-net4.7.1.sln" /p:Configuration=Release /p:Platform=x86 /verbosity:minimal
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output
+          path: |
+            jctool/Release/
+            jctool/jc_colorpicker/bin/Release/
