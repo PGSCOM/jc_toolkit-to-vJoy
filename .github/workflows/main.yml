@@ -15,10 +15,10 @@ jobs:
       - name: Set up MSBuild path
         uses: microsoft/setup-msbuild@v1
 
-      - name: Restore vJoy SDK (if using NuGet or Xcopy)
+      - name: Restore vJoy SDK (placeholder)
         run: |
-          # Adjust this step if you have a different vJoy SDK installation method
           echo "Ensure vJoyInterface.lib and vJoyInterface.h are available in your include/lib paths"
 
-      - name: Build jctool (Release Win32)
-        run: msbuild jctool/jctool.vs2017.vcxproj /p:Configuration=Release /p:Platform=Win32 /verbosity:minimal
+      - name: Build Visual Studio solution
+        run: |
+          msbuild "jctool.vs2017-net4.7.1.sln" /p:Configuration=Release /p:Platform=x86 /verbosity:minimal
