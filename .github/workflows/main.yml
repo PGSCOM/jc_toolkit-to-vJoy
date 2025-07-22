@@ -17,22 +17,46 @@ jobs:
 
       - name: Download vJoy SDK
         run: |
+          Write-Host "Downloading vJoy SDK..."
           $url = "https://github.com/shauleiz/vJoy/archive/refs/tags/v2.1.8.39.zip"
           $outputPath = "vJoy-SDK.zip"
           Invoke-WebRequest -Uri $url -OutFile $outputPath
+          Write-Host "Extracting vJoy SDK..."
           Expand-Archive -Path $outputPath -DestinationPath "."
           Rename-Item -Path "vJoy-2.1.8.39" -NewName "vJoySDK"
+          Write-Host "vJoy SDK ready at: $(Get-Location)\vJoySDK"
+          
+          # Verify SDK structure
+          if (Test-Path "vJoySDK\SDK\inc\vjoyinterface.h") {
+            Write-Host "✓ vJoyInterface.h found"
+          } else {
+            Write-Host "✗ vJoyInterface.h NOT found"
+            exit 1
+          }
+          
+          if (Test-Path "vJoySDK\SDK\lib\vJoyInterface.lib") {
+            Write-Host "✓ vJoyInterface.lib found"
+          } else {
+            Write-Host "✗ vJoyInterface.lib NOT found"
+            exit 1
+          }
 
       - name: Build Visual Studio solution
-        run: >
-          msbuild "jctool.vs2017-net4.7.1.sln"
-          /p:Configuration=Release
-          /p:Platform=x86
-          /p:WindowsTargetPlatformVersion=10.0.20348.0
-          /p:PlatformToolset=v143
-          /p:AdditionalIncludeDirectories="vJoySDK\SDK\inc"
-          /p:AdditionalLibraryDirectories="vJoySDK\SDK\lib"
-          /verbosity:minimal
+        run: |
+          $workDir = Get-Location
+          $includePath = Join-Path $workDir "vJoySDK\SDK\inc"
+          $libPath = Join-Path $workDir "vJoySDK\SDK\lib"
+          Write-Host "Include path: $includePath"
+          Write-Host "Library path: $libPath"
+          
+          msbuild "jctool.vs2017-net4.7.1.sln" `
+            /p:Configuration=Release `
+            /p:Platform=x86 `
+            /p:WindowsTargetPlatformVersion=10.0.20348.0 `
+            /p:PlatformToolset=v143 `
+            "/p:AdditionalIncludeDirectories=$includePath" `
+            "/p:AdditionalLibraryDirectories=$libPath" `
+            /verbosity:minimal
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
