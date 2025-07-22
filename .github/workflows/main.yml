@@ -15,9 +15,13 @@ jobs:
       - name: Set up MSBuild path
         uses: microsoft/setup-msbuild@v1
 
-      - name: Install vJoy SDK
+      - name: Download vJoy SDK
         run: |
-          choco install vjoysdk -y
+          $url = "https://github.com/shauleiz/vJoy/archive/refs/tags/v2.1.8.39.zip"
+          $outputPath = "vJoy-SDK.zip"
+          Invoke-WebRequest -Uri $url -OutFile $outputPath
+          Expand-Archive -Path $outputPath -DestinationPath "."
+          Rename-Item -Path "vJoy-2.1.8.39" -NewName "vJoySDK"
 
       - name: Build Visual Studio solution
         run: >
@@ -26,8 +30,8 @@ jobs:
           /p:Platform=x86
           /p:WindowsTargetPlatformVersion=10.0.20348.0
           /p:PlatformToolset=v143
-          /p:AdditionalIncludeDirectories="$env:ChocolateyInstall\lib\vjoysdk\tools\inc"
-          /p:AdditionalLibraryDirectories="$env:ChocolateyInstall\lib\vjoysdk\tools\lib\x86"
+          /p:AdditionalIncludeDirectories="vJoySDK\SDK\inc"
+          /p:AdditionalLibraryDirectories="vJoySDK\SDK\lib"
           /verbosity:minimal
 
       - name: Upload build artifacts
