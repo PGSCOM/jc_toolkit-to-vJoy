@@ -1,5 +1,6 @@
 #pragma once
 #include <cstdint>
+#include <string>
 
 using namespace System;
 
@@ -8,6 +9,8 @@ template <typename T> T CLAMP(const T& value, const T& low, const T& high)
     return value < low ? low : (value > high ? high : value);
 }
 
+#ifndef JCTOOL_TYPEDEFS_DEFINED
+#define JCTOOL_TYPEDEFS_DEFINED
 typedef uint8_t u8;
 typedef uint16_t u16;
 typedef uint32_t u32;
@@ -16,6 +19,7 @@ typedef int8_t s8;
 typedef int16_t s16;
 typedef int32_t s32;
 typedef int64_t s64;
+#endif // JCTOOL_TYPEDEFS_DEFINED
 
 #pragma pack(push, 1)
 
